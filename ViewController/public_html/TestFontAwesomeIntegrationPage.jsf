@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<f:view xmlns:f="http://java.sun.com/jsf/core" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:document title="TestFontAwesomeIntegrationPage.jsf" id="d1">
+        <af:form id="f1">
+            <af:panelGridLayout id="pgl1">
+                <af:gridRow height="50px" id="gr2">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc1">
+                        <!-- Header -->
+                    </af:gridCell>
+                </af:gridRow>
+                <af:gridRow height="100%" id="gr1">
+                    <af:gridCell width="100%" halign="stretch" valign="stretch" id="gc2">
+                        <!-- Content -->
+                        <af:panelDrawer id="pd1" position="start" width="250" showHandles="always">
+                            <af:showDetailItem id="dr1" icon="/images/small-gear.png" iconDelivery="inline">
+                                <af:panelGridLayout id="pgl8">
+                                    <af:gridRow marginTop="5px" height="auto" id="gr13">
+                                        <af:gridCell marginStart="5px" valign="middle" width="70%" halign="stretch"
+                                                     id="gc20">
+                                            <af:outputFormatted value="Rollup" id="of4"/>
+                                        </af:gridCell>
+                                        <af:gridCell marginStart="5px" valign="middle" width="30%" marginEnd="5px"
+                                                     halign="stretch" id="gc21">
+                                            <af:button styleClass="#{(pageFlowScope.rollupToggleState eq null || pageFlowScope.rollupToggleState eq 'off')? 'toggleOff toggleButton' : 'toggleOn toggleButton'}"
+                                                       id="b1"
+                                                       actionListener="#{uiHelper.onToggleStateChange}"
+                                                       binding="#{uiHelper.toggleButton}"/>
+                                        </af:gridCell>
+                                    </af:gridRow>
+                                    <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr14">
+                                        <af:gridCell marginStart="5px" rowSpan="2" valign="middle" width="100%" halign="stretch"
+                                                     id="gc22">                                          
+                                            <af:button id="b3"
+                                                       text="Show trends"
+                                                       styleClass="TestFontIconButton"/>
+                                        </af:gridCell>
+                                    </af:gridRow>
+                                </af:panelGridLayout>
+                            </af:showDetailItem>
+                        </af:panelDrawer>
+                    </af:gridCell>
+                </af:gridRow>
+            </af:panelGridLayout>
+        </af:form>
+    </af:document>
+</f:view>

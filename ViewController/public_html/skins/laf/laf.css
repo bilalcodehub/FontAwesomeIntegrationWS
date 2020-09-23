@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/**ADFFaces_Skin_File / DO NOT REMOVE**/
+@namespace af "http://xmlns.oracle.com/adf/faces/rich";
+@namespace dvt "http://xmlns.oracle.com/dss/adf/faces";
+
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('fontawesome-free-5.14.0/webfonts/fa-brands-400.eot');
+    src: url('fontawesome-free-5.14.0/webfonts/fa-brands-400.svg');
+    src: url('fontawesome-free-5.14.0/webfonts/fa-brands-400.ttf');
+    src: url('fontawesome-free-5.14.0/webfonts/fa-brands-400.woff');
+    src: url('fontawesome-free-5.14.0/webfonts/fa-brands-400.woff2');
+   
+    src: url('fontawesome-free-5.14.0/webfonts/fa-regular-400.eot');
+    src: url('fontawesome-free-5.14.0/webfonts/fa-regular-400.svg');
+    src: url('fontawesome-free-5.14.0/webfonts/fa-regular-400.ttf');
+    src: url('fontawesome-free-5.14.0/webfonts/fa-regular-400.woff');
+    src: url('fontawesome-free-5.14.0/webfonts/fa-regular-400.woff2');
+    
+    src: url('fontawesome-free-5.14.0/webfonts/fa-solid-900.eot');
+    src: url('fontawesome-free-5.14.0/webfonts/fa-solid-900.svg');
+    src: url('fontawesome-free-5.14.0/webfonts/fa-solid-900.ttf');
+    src: url('fontawesome-free-5.14.0/webfonts/fa-solid-900.woff');
+    src: url('fontawesome-free-5.14.0/webfonts/fa-solid-900.woff2');
+    
+    font-weight: normal;
+    font-style: normal;
+}
+
+.toggleOn:before {
+    content: "\f205";
+    font-family: FontAwesome;
+    text-align: center;
+    font-size:xx-large;
+    color:blue;
+    vertical-align:middle;
+}
+
+.toggleOff:before {
+    content: "\f204";
+    font-family: FontAwesome;
+    text-align: center;
+    font-size:xx-large;
+    color: grey;
+    vertical-align:middle;
+
+}
+
+.toggleButton {
+   border-color: transparent;
+   background-image: none;
+}
+
+.TestFontIconButton af|button::link:active {
+    content: "\f065";
+    font-family: FontAwesome; 
+    font-size:x-large;
+}
+
+
+.TestFontIconButton af|button::link:hover {
+    content: "\f065";
+    font-family: FontAwesome; 
+    font-size:x-large;
+}
+
+.TestFontIconButton af|button::link:depressed {
+    content: "\f065";
+    font-family: FontAwesome; 
+    font-size:x-large;
+}
